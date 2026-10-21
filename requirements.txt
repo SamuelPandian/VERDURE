@@ -1,0 +1,16 @@
+# Install torch/torchvision FIRST from the CPU index, then this file:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+#
+# (The CPU index keeps the download ~200 MB instead of ~2.5 GB of CUDA you
+#  can't use on a laptop without an NVIDIA card.)
+
+torch>=2.2
+torchvision>=0.17
+opencv-python>=4.8
+numpy>=1.24
+Pillow>=10.0
+# kaggle 2.x needs Python 3.11+ and accepts the new KGAT_ tokens.
+# On Python <=3.10 pip will fall back to 1.7.x, which needs the legacy
+# kaggle.json instead. `python download_data.py --check-auth` tells you which.
+kaggle>=1.6
