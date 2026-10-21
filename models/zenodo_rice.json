@@ -1,0 +1,30 @@
+{
+  "source_checkpoint": "zenodo_rice.pt",
+  "arch": "mobilenet_v3_small",
+  "num_classes": 11,
+  "classes": [
+    "Rice___Bacterial_Leaf_Blight",
+    "Rice___Bacterial_Leaf_Streak",
+    "Rice___Bacterial_Panicle_Blight",
+    "Rice___Blast",
+    "Rice___Brown_Spot",
+    "Rice___Dead_Heart",
+    "Rice___Hispa",
+    "Rice___Normal",
+    "Rice___Sheath_Blight",
+    "Rice___Tungro",
+    "__background__"
+  ],
+  "input_size": 224,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "val_acc": 0.837696335078534
+}

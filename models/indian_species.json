@@ -1,0 +1,42 @@
+{
+  "source_checkpoint": "indian_species.pt",
+  "arch": "mobilenet_v3_small",
+  "num_classes": 23,
+  "classes": [
+    "Alstonia Scholaris diseased (P2a)",
+    "Alstonia Scholaris healthy (P2b)",
+    "Arjun diseased (P1a)",
+    "Arjun healthy (P1b)",
+    "Bael diseased (P4b)",
+    "Basil healthy (P8)",
+    "Chinar diseased (P11b)",
+    "Chinar healthy (P11a)",
+    "Gauva diseased (P3b)",
+    "Gauva healthy (P3a)",
+    "Jamun diseased (P5b)",
+    "Jamun healthy (P5a)",
+    "Jatropha diseased (P6b)",
+    "Jatropha healthy (P6a)",
+    "Lemon diseased (P10b)",
+    "Lemon healthy (P10a)",
+    "Mango diseased (P0b)",
+    "Mango healthy (P0a)",
+    "Pomegranate diseased (P9b)",
+    "Pomegranate healthy (P9a)",
+    "Pongamia Pinnata diseased (P7b)",
+    "Pongamia Pinnata healthy (P7a)",
+    "__background__"
+  ],
+  "input_size": 224,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "val_acc": 0.9235294117647059
+}
