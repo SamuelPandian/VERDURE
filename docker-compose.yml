@@ -1,0 +1,21 @@
+services:
+  verdure-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: verdure-leaf-doctor:v2
+    container_name: verdure_leaf_doctor
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    environment:
+      - PORT=8080
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./models:/app/models:ro
+      - ./samples:/app/samples:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

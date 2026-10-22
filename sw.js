@@ -1,9 +1,15 @@
 // VERDURE Service Worker for Offline In-Field Execution
-const CACHE_NAME = 'verdure-cache-v1';
+const CACHE_NAME = 'verdure-cache-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
-  './manifest.json'
+  './manifest.json',
+  './samples/potato_early_blight.jpg',
+  './samples/field_rice_canopy.jpg',
+  './samples/motion_blur_leaf.jpg',
+  './samples/hand_occlusion_leaf.jpg',
+  './samples/soil_non_foliage.jpg',
+  './samples/confocal_stomata.jpg'
 ];
 
 self.addEventListener('install', (e) => {
