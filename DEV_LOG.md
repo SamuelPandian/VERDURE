@@ -106,6 +106,10 @@
     - Tier 4: Temperature-scaled softmax ($T=1.18$) confidence below $\theta=55\% \implies$ Bayesian Uncertainty Triage with actionable differential bars.
   - Refined FastAPI `/api/predict` endpoint schema to handle polymorphic input formats (`image_base64`, `sample_path`, and binary multipart file uploads) with automatic fallback and sub-millisecond preprocessing.
   - Validated end-to-end user journey in a live headless Chromium session via Chrome DevTools MCP, confirming zero console errors and 100% test scenario pass rate.
+* **Phase 13 (12:25 PM – 12:35 PM, 2026-10-22):** Automated Test Suite (`run_tests.py`) & Native Android APK Tooling:
+  - Built comprehensive 10-point test runner [`run_tests.py`](file:///c:/Users/USER/Downloads/Hackathon/Hackathon/Leaf/run_tests.py) covering PyTorch checkpoint verification (`best.pt`, `rice_diseases.pt`, `zenodo_rice.pt`, `indian_species.pt`), botanical label parsing, agronomic prescription lookups, physical/optical/foliage/skin/open-world rejection cascades, calibrated uncertainty triage ($T=1.18$), lesion saliency pins, and all FastAPI REST endpoints.
+  - Verified test execution: 10/10 tests passed in $0.598\text{ seconds}$ with $100\%$ success rate.
+  - Built cross-platform native Android packaging scripts (`build_apk.bat` and `build_apk.sh`) automating Capacitor CLI initialization and Android Studio project generation.
 
 ---
 
