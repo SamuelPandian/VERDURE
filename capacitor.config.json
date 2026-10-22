@@ -1,0 +1,8 @@
+{
+  "appId": "org.verdure.leafdoctor",
+  "appName": "VERDURE",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

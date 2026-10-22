@@ -1,0 +1,15 @@
+{
+  "name": "verdure-leaf-doctor",
+  "version": "1.0.0",
+  "description": "VERDURE Precision Leaf Doctor PWA & Android App",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Assets ready'",
+    "cap:sync": "cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  }
+}

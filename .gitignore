@@ -33,6 +33,22 @@ ENV/
 env.bak/
 venv.bak/
 
+# Node & Package Managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Android / Capacitor builds
+.gradle/
+android/.gradle/
+android/build/
+android/app/build/
+android/capacitor-cordova-android-plugins/build/
+android/.idea/
+*.apk
+*.aab
+
 # IDE & Editor files
 .idea/
 .vscode/
